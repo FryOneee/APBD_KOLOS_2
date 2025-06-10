@@ -19,7 +19,7 @@ namespace KOLOS_2.Controllers
         {
             var orders = await _userRaces.GetUserRaces(id);
             if (orders == null)
-                return NotFound(new { message = "Patient not found" });
+                return NotFound(new { message = "Racer not found." });
             return Ok(orders);
         }
         
@@ -29,7 +29,7 @@ namespace KOLOS_2.Controllers
         {
             var orders = await _userRaces.AddRacersToRace(req);
             if (orders == null)
-                return NotFound(new { message = "Patient not found" });
+                return NotFound(new { message = "track, racer or race not found" });
             return Ok(orders);
         }
 
