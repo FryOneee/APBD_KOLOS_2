@@ -35,7 +35,7 @@ public class UserRaces: IUserRaces
                         track = new TrackDTO
                         {
                             name = p.TrackRace.Track.Name,
-                            lengthInKm = p.TrackRace.Track.LengthInKm
+                            lengthInKm = p.TrackRace.Track.LengthInKm,
                         },
                         laps = p.TrackRace.Laps,
                         finishTimeInSeconds = p.FinishTimeInSeconds,

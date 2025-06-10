@@ -23,6 +23,9 @@ namespace KOLOS_2.Data
         {
             modelBuilder.Entity<RaceParticipation>()
                 .HasKey(rp => new { rp.RacerId, rp.TrackRaceId });
+            
+            
+
 
         }
     }

@@ -12,7 +12,7 @@ namespace KOLOS_2.Controllers
     public class OrdersController : ControllerBase
     {
         private readonly IUserRaces _userRaces;
-        public OrdersController(IUserRaces _userRaces) => _userRaces = _userRaces;
+        public OrdersController(IUserRaces userRaces) => _userRaces = userRaces;
 
         [HttpGet("racers/{id}/participations")]
         public async Task<IActionResult> GetOrder(int id)
